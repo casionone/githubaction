@@ -24,10 +24,9 @@ jobs:
         with:
           node-version: "16"
 
-      - name: Sync Docs
+      - name: Install  dependence
         run: |
-          npm ci
-          npm run sync
+          npm  install
 
       - name: Build
         run: |
