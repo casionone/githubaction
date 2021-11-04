@@ -1,0 +1,13 @@
+podling网站
+http://incubator.apache.org/guides/sites.html#podling_website_requirements
+
+web url要求
+https://www.apache.org/foundation/marks/pmcs#websites
+
+
+【Linkis Apache Infra 周报】
+本周主要工作,官网内容细节填充和修复&测试并部署投产使用,licence等文档修改，具体进度如下
+1.jersey以及jackson等代码修改工作以及infra建设的前置依赖项 已完成
+2.文档修改（文档链接修改，NOTICE ，LICENSE，DISCLAIMER修改）进度100% 较上周5%
+3. web site官网一期内容+视觉已完成(已向google/百度提交收录申请)并正式部署上线,较上周+35%，进度100%
+4. 1.0.3版本上发布(仓库已迁移至apache组织,apache nexus的maven权限已申请完成。1.0.3依赖DSS组件升级，延期至下月)较上周+5%，进度25%
