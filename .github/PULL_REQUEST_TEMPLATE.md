@@ -4,22 +4,11 @@ You can learn more about contributing to Apache Linkis here: https://linkis.apac
 Happy contributing!
 -->
 
-### Checklist
-
-- [ ] I have read the [Contributing Guidelines on pull requests](https://github.com/facebook/docusaurus/blob/main/CONTRIBUTING.md#pull-requests).
-- [ ] I have explained the need for this PR and the problem it solves
-- [ ] I have explained the changes or the new features added to this PR
-- [ ] I have added tests corresponding to this change
-- [ ] I have updated the documentation to reflect this change
-- [ ] I have verified that this change is backward compatible (If not, please discuss on the [Linkis mailing list](https://linkis.apache.org/community/how-to-subscribe) first)
-- [ ] **If this is a code change**: I have written unit tests to fully verify the new behavior.
-
 ### What is the purpose of the change
 
 EngineConn-Core defines the the abstractions and interfaces of the EngineConn core functions.
 The Engine Service in Linkis 0.x is refactored, EngineConn will handle the engine connection 
 and session management.
-
 
 ## Related issues/PRs
 
@@ -31,6 +20,18 @@ Related pr:#591
 
 - Define the core abstraction and interfaces of the EngineConn Factory;
 - Define the core abstraction and interfaces of Executor Manager.
+
+
+### Checklist
+
+- [ ] I have read the [Contributing Guidelines on pull requests](https://github.com/facebook/docusaurus/blob/main/CONTRIBUTING.md#pull-requests).
+- [ ] I have explained the need for this PR and the problem it solves
+- [ ] I have explained the changes or the new features added to this PR
+- [ ] I have added tests corresponding to this change
+- [ ] I have updated the documentation to reflect this change
+- [ ] I have verified that this change is backward compatible (If not, please discuss on the [Linkis mailing list](https://linkis.apache.org/community/how-to-subscribe) first)
+- [ ] **If this is a code change**: I have written unit tests to fully verify the new behavior.
+
 
 
 <!--
