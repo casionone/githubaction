@@ -83,9 +83,8 @@ body:
       label: Your environment
       description: Include as many relevant details about the environment you experienced the bug in.
       value: |
-        - Linkis version used:(e.g. 1.1.2)
-        - Environment name and version (e.g. cdh-5.14.2, hdp-3.1.5, hive-2.1.1, spark-3.2.1...):
-        - Public source code:
+        - Linkis version used: e.g. 1.1.2
+        - Environment name and version: e.g. cdh-5.14.2, hdp-3.1.5, hive-2.1.1, spark-3.2.1...
 
 
   - type: textarea
