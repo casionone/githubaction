@@ -24,7 +24,7 @@ Related pr:#591
 
 ### Checklist
 
-- [ ] I have read the [Contributing Guidelines on pull requests](https://github.com/facebook/docusaurus/blob/main/CONTRIBUTING.md#pull-requests).
+- [x] I have read the [Contributing Guidelines on pull requests](https://github.com/facebook/docusaurus/blob/main/CONTRIBUTING.md#pull-requests).
 - [ ] I have explained the need for this PR and the problem it solves
 - [ ] I have explained the changes or the new features added to this PR
 - [ ] I have added tests corresponding to this change
