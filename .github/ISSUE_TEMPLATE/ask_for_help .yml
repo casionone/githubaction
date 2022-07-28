@@ -30,7 +30,13 @@ body:
         - label: >
             I searched the [issues](https://github.com/apache/incubator-linkis/issues) and found no similar issues.
           required: true
-
+        - label: >
+            I searched the [issues](https://github.com/apache/incubator-linkis/issues) and found no similar issues.
+          required: true
+        - label: >
+            I searched the [issues](https://github.com/apache/incubator-linkis/issues) and found no similar issues.
+          required: true
+          
   - type: dropdown
     attributes:
       label: Linkis Component
