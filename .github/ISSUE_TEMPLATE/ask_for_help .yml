@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-name: ❓ Ask Questions
+name: ❓Ask Questions
 title: "[Question] "
 description:  Need help, or to ask questions
 labels: [Question]
@@ -45,8 +45,17 @@ body:
       label: Your environment
       description: Include as many relevant details about the environment you used.
       value: |
-        - Linkis version used: e.g. 1.1.2
-        - Environment name and version: e.g. cdh-5.14.2, hdp-3.1.5, hive-2.1.1, spark-3.2.1 scala-2.12.2 ...
+          <!-- Please describe the linkis version you are using and basic environment information -->
+          <!-- 请描述您使用的linkis版本和基本环境信息 -->
+          - Linkis version used: 1.1.2
+          - Environment name and version:
+              - cdh-5.14.2
+              - hdp-3.1.5
+              - hive-2.1.1
+              - spark-3.2.1
+              - scala-2.12.2
+              - jdk 1.8.0_121
+              - ....
     validations:
       required: true
 
@@ -56,17 +65,20 @@ body:
       label: Describe your questions
       description: Write down the detail info of you question
       value: |
-        1. Step 1...
-        2. Step 2...
-        3. Step 3...
+        <!-- Please describe your questions -->
+        <!-- 请描述您的问题 -->
+        Q1.  ...
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Some logs info
+      label: Some logs info or acctch file
       description: Some logs infomation
       value: |
+        <!-- Please add the log in the following format, the key error log must be pasted in the code style, and the text as much as possible, the detailed log or other files can be dragged and uploaded as an attachment -->
+        <!-- 请按如下格式 添加日志，关键错误日志请务必贴到代码栏中，尽可能贴文字，详细日志或则其它文件，可以拖拽上传作为附件 -->
+
         linkis-xxx.log:
         ````shell
         .....
@@ -78,7 +90,7 @@ body:
 
         ````
         log file:
-        [linkis-xxx.log](https://github.com/casionone/githubaction/files/9217195/1.txt)
+        [linkis-xxx.log](https://github.com/apache/incubator-linkis/files/9219529/yarn-error.log)
 
     validations:
       required: true
