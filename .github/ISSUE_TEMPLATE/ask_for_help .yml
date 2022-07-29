@@ -36,7 +36,7 @@ body:
             (我在[discussions](https://github.com/apache/incubator-linkis/issues)搜索了，并没有发现类似问题).
           required: true
         - label: >
-            I follow the [Troubleshooting guide](https://linkis.apache.org/zh-CN/docs/latest/deployment/quick-deploy#8-%E5%B8%B8%E8%A7%81%E5%BC% 82%E5%B8%B8%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E6%8C%87%E5%BC%95) document guidelines were checked, didn't solve the problem
+            I follow the [Troubleshooting guide](https://linkis.apache.org/zh-CN/docs/latest/deployment/quick-deploy#8-%E5%B8%B8%E8%A7%81%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E6%8C%87%E5%BC%95) document guidelines were checked, didn't solve the problem
             (我按[Troubleshooting guide](https://linkis.apache.org/zh-CN/docs/latest/deployment/quick-deploy#8-%E5%B8%B8%E8%A7%81%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E6%8C%87%E5%BC%95)排查指引进行了排查，并没有解决问题).
           required: true
 
@@ -68,9 +68,14 @@ body:
       description: Some logs infomation
       value: |
         linkis-xxx.log:
-        ```
+        ````shell
         .....
+        o.a.l.e.s.s.DefaultEngineConnResourceService (41) [info] - Ready to upload a new bmlResource for hiveEngineConn-v3.1.2. path: conf.zip
+        2022-07-28 10:18:21.955 [ERROR] [Linkis-Default-Scheduler-Thread-1       ] o.a.l.e.s.s.DefaultEngineConnResourceService (91) [$anonfun$run$4] - Failed to upload engine conn to bml, now exit! java.net.SocketException: Connection reset
+        	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[?:1.8.0_202]
+        	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_202]
         .....
-        ```
+
+        ````
     validations:
       required: true
