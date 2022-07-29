@@ -28,14 +28,15 @@ body:
         whether the same questions was asked already.
       options:
         - label: >
-            I searched the [issues](https://github.com/apache/incubator-linkis/issues) and found no similar issues.
-            (我在[issues](https://github.com/apache/incubator-linkis/issues)并搜索了，但没有发现类似的问题)
+            I searched the [issues](https://github.com/apache/incubator-linkis/issues) and found no similar issues
+            (我在[issues](https://github.com/apache/incubator-linkis/issues)搜索了，并没有发现类似问题).
           required: true
         - label: >
-            I searched the [discussions](https://github.com/apache/incubator-linkis/discussions/categories/q-a) and found no similar discussions. 
-            我在[discussions](https://github.com/apache/incubator-linkis/issues)并搜索了，但没有发现类似的问题
+            I searched the [discussions](https://github.com/apache/incubator-linkis/discussions/categories/q-a) and found no similar discussions
+            (我在[discussions](https://github.com/apache/incubator-linkis/issues)搜索了，并没有发现类似问题).
           required: true
         - label: >
-            I3 searched the [issues](https://github.com/apache/incubator-linkis/issues) and found no similar issues.
+            I follow the [Troubleshooting guide](https://linkis.apache.org/zh-CN/docs/latest/deployment/quick-deploy#8-%E5%B8%B8%E8%A7%81%E5%BC% 82%E5%B8%B8%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E6%8C%87%E5%BC%95) document guidelines were checked, didn't solve the problem
+            (我按[Troubleshooting guide](https://linkis.apache.org/zh-CN/docs/latest/deployment/quick-deploy#8-%E5%B8%B8%E8%A7%81%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E6%8C%87%E5%BC%95)排查指引进行了排查，并没有解决问题).
           required: true
 
