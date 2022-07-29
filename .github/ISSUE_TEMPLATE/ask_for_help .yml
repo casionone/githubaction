@@ -77,5 +77,8 @@ body:
         .....
 
         ````
+        log file:
+        [linkis-xxx.log](https://github.com/casionone/githubaction/files/9217195/1.txt)
+
     validations:
       required: true
