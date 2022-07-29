@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-name: ❓Ask Questions
+name: ❓ Ask Questions
 title: "[Question] "
 description:  Need help, or to ask questions
 labels: [Question]
@@ -94,3 +94,21 @@ body:
 
     validations:
       required: true
+
+
+  - type: markdown
+    attributes:
+      value: "
+              Note ❤️
+              English:
+              - 1. Please ask questions in a standardized format, so that the community students can answer them. After asking questions, please continue to pay attention to your questions.
+              - 2. If the problem already exists, we will choose to close and clean
+              - 3. Please pay special attention that in addition to the screenshots, you also need to paste the log text. Only the questions of the picture log will not be given priority to answer.
+              - 4. It is recommended to ask questions in English; if there is an unclear description, you can use a mixture of Chinese and English; translate Chinese into English, and then fill in both Chinese and English into the issue
+
+              中文:
+              - 1. 请按格式规范提问，方便社区同学解答，提问后请后续持续关注你的问题
+              - 2. 如果问题已经存在，请到已有的问题下，继续讨论， 重复的我们会选择关闭并清理
+              - 3. 请特别注意除了截图，还需要把日志文字贴入，只有图片日志的问题，不会优先安排回答
+              - 4. 建议使用英文提问；如果存在描述不清晰，可以使用中英文混合；把中文翻译为英文，然后中文和英文一同填入到issue中
+              "
