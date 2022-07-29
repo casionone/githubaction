@@ -40,3 +40,37 @@ body:
             (我按[Troubleshooting guide](https://linkis.apache.org/zh-CN/docs/latest/deployment/quick-deploy#8-%E5%B8%B8%E8%A7%81%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E6%8C%87%E5%BC%95)排查指引进行了排查，并没有解决问题).
           required: true
 
+  - type: textarea
+    attributes:
+      label: Your environment
+      description: Include as many relevant details about the environment you used.
+      value: |
+        - Linkis version used: e.g. 1.1.2
+        - Environment name and version: e.g. cdh-5.14.2, hdp-3.1.5, hive-2.1.1, spark-3.2.1 scala-2.12.2 ...
+    validations:
+      required: true
+
+
+  - type: textarea
+    attributes:
+      label: Describe your questions
+      description: Write down the detail info of you question
+      value: |
+        1. Step 1...
+        2. Step 2...
+        3. Step 3...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Some logs info
+      description: Some logs infomation
+      value: |
+        linkis-xxx.log:
+        ```
+        .....
+        .....
+        ```
+    validations:
+      required: true
