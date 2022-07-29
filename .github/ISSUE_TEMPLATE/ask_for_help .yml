@@ -98,7 +98,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "
+      value: 
               Note ❤️
               English:
               - 1. Please ask questions in a standardized format, so that the community students can answer them. After asking questions, please continue to pay attention to your questions.
@@ -111,4 +111,4 @@ body:
               - 2. 如果问题已经存在，请到已有的问题下，继续讨论， 重复的我们会选择关闭并清理
               - 3. 请特别注意除了截图，还需要把日志文字贴入，只有图片日志的问题，不会优先安排回答
               - 4. 建议使用英文提问；如果存在描述不清晰，可以使用中英文混合；把中文翻译为英文，然后中文和英文一同填入到issue中
-              "
+              
