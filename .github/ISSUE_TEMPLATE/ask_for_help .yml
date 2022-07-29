@@ -29,7 +29,7 @@ body:
       options:
         - label: >
             I searched the [issues](https://github.com/apache/incubator-linkis/issues) and found no similar issues.
-            我在[issues](https://github.com/apache/incubator-linkis/issues)并搜索了，但没有发现类似的问题
+            (我在[issues](https://github.com/apache/incubator-linkis/issues)并搜索了，但没有发现类似的问题)
           required: true
         - label: >
             I searched the [discussions](https://github.com/apache/incubator-linkis/discussions/categories/q-a) and found no similar discussions. 
