@@ -25,7 +25,7 @@ body:
       label: Before asking
       options:
         - label: >
-            I have read the [How to ask for help guide](https://github.com/facebook/docusaurus/blob/main/CONTRIBUTING.md#pull-requests)
+            I have read the [How to ask for help](https://github.com/facebook/docusaurus/blob/main/CONTRIBUTING.md#pull-requests)
             (我已阅读[如何寻求帮助](https://github.com/apache/incubator-linkis/issues)指引文档).
           required: true
 
