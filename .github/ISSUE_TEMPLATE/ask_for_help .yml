@@ -25,8 +25,8 @@ body:
       label: Before asking
       options:
         - label: >
-            I have read the [How to ask for help](https://github.com/facebook/docusaurus/blob/main/CONTRIBUTING.md#pull-requests)
-            (我已阅读[如何寻求帮助](https://github.com/apache/incubator-linkis/issues)指引文档).
+            I have read the [How to ask for help](https://linkis.apache.org/community/ask-for-help)
+            (我已阅读[如何寻求帮助](https://linkis.apache.org/zh-CN/community/ask-for-help)指引文档).
           required: true
 
   - type: textarea
