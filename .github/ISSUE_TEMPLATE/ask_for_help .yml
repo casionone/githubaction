@@ -65,9 +65,8 @@ body:
       description: Screenshot of the service instance displayed on the Eureka registry page
       value: |
         <!-- You can directly copy and paste the screenshot of the list of registered service instances displayed on the Eureka page here -->
-        <!--  可以将Eureka页面显示的注册服务实例列表的的截图 直接复制并粘贴到这里-->
-        eg:
-        ![image](https://user-images.githubusercontent.com/7869972/183326205-381b4e30-c727-44ba-8197-9998da78b1e3.png)
+        <!--  可以将Eureka页面显示的注册服务实例列表的的截图 直接复制并粘贴到这里。 粘贴后，会自动生成如下格式的url-->
+        eg:![image](https://user-images.githubusercontent.com/7869972/183326205-381b4e30-c727-44ba-8197-9998da78b1e3.png)
 
 
   - type: textarea
@@ -86,6 +85,7 @@ body:
         	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_202]
         ````
         log file:
+         <!-- 拖拽上传后，会自动生成如下示例格式的url -->
         [linkis-xxx.log](https://github.com/apache/incubator-linkis/files/9219529/yarn-error.log)
 
     validations:
@@ -99,10 +99,12 @@ body:
         English:
         - Please ask questions in a standardized format, so that the community students can answer them. After asking questions, please continue to pay attention to your questions.
         - Please pay special attention that in addition to the screenshots, you also need to paste the log text. Only the questions of the picture log will not be given priority to answer.
+        - If it is an error in the running phase, please attach the screenshot of Eureka registry service list
         - It is recommended to ask questions in English; if there is an unclear description, you can use a mixture of Chinese and English; translate Chinese into English, and then fill in both Chinese and English into the issue
 
         中文:
         - 请按格式规范提问，方便社区同学解答，提问后请后续持续关注你的问题
         - 请特别注意除了截图，还需要把日志文字贴入，只有图片日志的问题，不会优先安排回答
+        - 如果是运行阶段的报错，请将Eureka注册中心服务列表截图附上
         - 建议使用英文提问；如果存在描述不清晰，可以使用中英文混合；把中文翻译为英文，然后中文和英文一同填入到issue中
               
