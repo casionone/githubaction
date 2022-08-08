@@ -60,14 +60,14 @@ body:
       required: true
 
   - type: textarea
-      attributes:
-        label: Eureka service list
-        description: Screenshot of the service instance displayed on the Eureka registry page
-        value: |
-          <!-- You can directly copy and paste the screenshot of the list of registered service instances displayed on the Eureka page here -->
-          <!--  可以将Eureka页面显示的注册服务实例列表的的截图 直接复制并粘贴到这里-->
-          eg:
-          ![image](https://user-images.githubusercontent.com/7869972/183326205-381b4e30-c727-44ba-8197-9998da78b1e3.png)
+    attributes:
+      label: Eureka service list
+      description: Screenshot of the service instance displayed on the Eureka registry page
+      value: |
+        <!-- You can directly copy and paste the screenshot of the list of registered service instances displayed on the Eureka page here -->
+        <!--  可以将Eureka页面显示的注册服务实例列表的的截图 直接复制并粘贴到这里-->
+        eg:
+        ![image](https://user-images.githubusercontent.com/7869972/183326205-381b4e30-c727-44ba-8197-9998da78b1e3.png)
 
 
   - type: textarea
