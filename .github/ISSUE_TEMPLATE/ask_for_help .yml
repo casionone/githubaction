@@ -66,6 +66,7 @@ body:
       value: |
         <!-- You can directly copy and paste the screenshot of the list of registered service instances displayed on the Eureka page here -->
         <!--  可以将Eureka页面显示的注册服务实例列表的的截图 直接复制并粘贴到这里。 粘贴后，会自动生成如下格式的url-->
+
         eg:![image](https://user-images.githubusercontent.com/7869972/183326205-381b4e30-c727-44ba-8197-9998da78b1e3.png)
 
 
@@ -75,17 +76,16 @@ body:
       description: Some logs infomation
       value: |
         <!-- Please add the log in the following format, the key error log must be pasted in the code style, and the text as much as possible, the detailed log or other files can be dragged and uploaded as an attachment -->
-        <!-- 请按如下格式 添加日志，关键错误日志请务必贴到[````log][````]之间，尽可能贴文字，详细日志或则其它文件，可以拖拽上传作为附件 -->
+        <!-- 请按如下格式 添加日志，关键错误日志请贴到[````log][````]之间，尽可能贴文字，详细日志或则其它文件，可以拖拽上传作为附件 -->
 
         linkis-xxx.log:
         ````log
-        o.a.l.e.s.s.DefaultEngineConnResourceService (41) [info] - Ready to upload a new bmlResource for hiveEngineConn-v3.1.2. path: conf.zip
-        2022-07-28 10:18:21.955 [ERROR] [Linkis-Default-Scheduler-Thread-1       ] o.a.l.e.s.s.DefaultEngineConnResourceService (91) [$anonfun$run$4] - Failed to upload engine conn to bml, now exit! java.net.SocketException: Connection reset
-        	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[?:1.8.0_202]
-        	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_202]
+
+        <!--日志文字贴到这里-->
+
         ````
         log file:
-         <!-- 拖拽上传后，会自动生成如下示例格式的url -->
+         <!-- 拖拽上传后，会自动生成如下示例格式的附件url -->
         [linkis-xxx.log](https://github.com/apache/incubator-linkis/files/9219529/yarn-error.log)
 
     validations:
