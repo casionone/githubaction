@@ -78,7 +78,7 @@ body:
         <!-- 请按如下格式 添加日志，关键错误日志请务必贴到[````log][````]之间，尽可能贴文字，详细日志或则其它文件，可以拖拽上传作为附件 -->
 
         linkis-xxx.log:
-        ````txt
+        ````log
         o.a.l.e.s.s.DefaultEngineConnResourceService (41) [info] - Ready to upload a new bmlResource for hiveEngineConn-v3.1.2. path: conf.zip
         2022-07-28 10:18:21.955 [ERROR] [Linkis-Default-Scheduler-Thread-1       ] o.a.l.e.s.s.DefaultEngineConnResourceService (91) [$anonfun$run$4] - Failed to upload engine conn to bml, now exit! java.net.SocketException: Connection reset
         	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[?:1.8.0_202]
