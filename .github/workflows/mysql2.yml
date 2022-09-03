@@ -14,10 +14,6 @@ jobs:
         image: mysql:5.7
         env:
           MYSQL_ROOT_PASSWORD: password
-          MYSQL_DB: linkis_test
-          MYSQL_HOST: 127.0.0.1
-          MYSQL_PORT: 32574
-          MYSQL_USER: root
         ports:
           - 32574:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
@@ -25,4 +21,9 @@ jobs:
       - name: Verify MySQL connection from host
         run: |
           sudo apt-get install -y mysql-client
+          config="--host 127.0.0.1 --port 32574 -uroot -ppassword "
           mysql --host 127.0.0.1 --port 32574 -uroot -ppassword -e "SHOW DATABASES"
+          mysql --host 127.0.0.1 --port 32574 -uroot -ppassword  --default-character-set=utf8 -e "CREATE DATABASE IF NOT EXISTS $MYSQL_DB DEFAULT CHARSET utf8 COLLATE utf8_general_ci;"
+
+          mysql $config  -e "SHOW DATABASES"
+
