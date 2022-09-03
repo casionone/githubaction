@@ -26,12 +26,12 @@ jobs:
           sudo apt-get install -y mysql-client
           ls
           config="--host 127.0.0.1 --port 32574 -uroot -ppassword "
-
+          MYSQL_DB=linkis_test
           mysql --host 127.0.0.1 --port 32574 -uroot -ppassword -e "SHOW DATABASES"
-          mysql --host 127.0.0.1 --port 32574 -uroot -ppassword  --default-character-set=utf8 -e "CREATE DATABASE IF NOT EXISTS linkis_test DEFAULT CHARSET utf8 COLLATE utf8_general_ci;"
-          mysql $config --default-character-set=utf8 -e "source ./db/linkis_ddl.sql"
-          mysql $config --default-character-set=utf8 -e "source ./db/linkis_dml.sql"
-          mysql $config -e "SHOW DATABASES"
-          mysql $config -e "select * from linkis_test.linkis_ps_configuration_config_key"
+          mysql --host 127.0.0.1 --port 32574 -uroot -ppassword  --default-character-set=utf8 -e "CREATE DATABASE IF NOT EXISTS $MYSQL_DB DEFAULT CHARSET utf8 COLLATE utf8_general_ci;"
+          mysql $config  -D$MYSQL_DB --default-character-set=utf8 -e "source ./db/linkis_ddl.sql"
+          mysql $config  -D$MYSQL_DB --default-character-set=utf8 -e "source ./db/linkis_dml.sql"
+          mysql $config  -D$MYSQL_DB -e "show tables"
+          mysql $config  -D$MYSQL_DB -e "select * from linkis_test.linkis_ps_configuration_config_key"
 
 
