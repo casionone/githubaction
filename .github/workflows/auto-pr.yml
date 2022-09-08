@@ -56,7 +56,7 @@ jobs:
         uses: peter-evans/create-pull-request@v4.1.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ env.BRANCH_NAME }}-${{ env.SHA }}
+          branch: ${{ env.BRANCH_NAME }}
           title: '[Example] Update report'
           body: |
             Update report
