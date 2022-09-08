@@ -39,7 +39,7 @@ jobs:
         run: rm -f info.txt
 
       - name: Apply Changes
-        uses: EndBug/add-and-commit@v4
+        uses: EndBug/add-and-commit@v9.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -57,4 +57,3 @@ jobs:
           title: '[Github Actions] Periodic Sync Camel Spring Boot Main Branch'
           body: |
             Periodic Sync of Camel Spring Boot Main Branch with main Camel Main.
-            see https://github.com/apache/camel-spring-boot/blob/main/.github/workflows/automatic-sync-main.yml
