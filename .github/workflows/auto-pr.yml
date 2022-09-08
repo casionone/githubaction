@@ -37,7 +37,7 @@ jobs:
         run: echo running on branch ${{ env.BRANCH_NAME }}-${{ env.SHA }}; echo "MY_DATE=2020-10-07T12:00:00+01:00" >> $GITHUB_ENV
 
       - name: Add Test file
-        run: echo ${{ MY_DATE }}-${{ env.BRANCH_NAME }}-${{ env.SHA }} > info.txt
+        run: echo ${{ env.MY_DATE }}-${{ env.BRANCH_NAME }}-${{ env.SHA }} > info.txt
 
       - name: Apply Changes
         uses: EndBug/add-and-commit@v9.1.0
@@ -47,7 +47,7 @@ jobs:
           author_name: License Bot
           author_email: license_bot@github.com
           message: 'Automatic application of license header'
-          new_branch: ${{ env.BRANCH_NAME }}-${{ MY_DATE }}
+          new_branch: ${{ env.BRANCH_NAME }}-${{ env.MY_DATE }}
 
 #      - name: Create Pull Request
 #        uses: peter-evans/create-pull-request@v4.1.1
