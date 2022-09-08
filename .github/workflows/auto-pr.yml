@@ -30,16 +30,14 @@ jobs:
     env:
       BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
       SHA: ${{ github.sha }}
-      TIME: $(date +'%Y-%m-%dT%H-%M-%S')
     steps:
       - name: Checkout Camel project
         uses: actions/checkout@v3
-        if: ${{ github.event.pull_request.merged}}
       - name: Branch name
-        run: echo running on branch ${{ env.BRANCH_NAME }}-${{ env.SHA }}
+        run: echo running on branch ${{ env.BRANCH_NAME }}-${{ env.SHA }}; echo "MY_DATE=2020-10-07T12:00:00+01:00" >> $GITHUB_ENV
 
       - name: Add Test file
-        run: echo ${{ TIME }}-${{ env.BRANCH_NAME }}-${{ env.SHA }} > info.txt
+        run: echo ${{ MY_DATE }}-${{ env.BRANCH_NAME }}-${{ env.SHA }} > info.txt
 
       - name: Apply Changes
         uses: EndBug/add-and-commit@v9.1.0
@@ -49,7 +47,7 @@ jobs:
           author_name: License Bot
           author_email: license_bot@github.com
           message: 'Automatic application of license header'
-          new_branch: ${{ env.BRANCH_NAME }}-${{ TIME }}
+          new_branch: ${{ env.BRANCH_NAME }}-${{ MY_DATE }}
 
 #      - name: Create Pull Request
 #        uses: peter-evans/create-pull-request@v4.1.1
