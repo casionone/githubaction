@@ -36,8 +36,14 @@ jobs:
       - name: Branch name
         run: echo running on branch ${{ env.BRANCH_NAME }}-${{ env.SHA }}; echo "MY_DATE=$(date +'%Y-%m-%dT-%H-%M-%S')" >> $GITHUB_ENV
 
+      - name: info
+        run: ls ./
+
       - name: Add Test file
         run: echo ${{ env.MY_DATE }}-${{ env.BRANCH_NAME }}-${{ env.SHA }} > info.txt
+
+      - name: info2
+        run: ls ./
 
       - name: Apply Changes
         uses: EndBug/add-and-commit@v9.1.0
