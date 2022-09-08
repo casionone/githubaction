@@ -50,6 +50,7 @@ jobs:
           author_name: License Bot
           author_email: license_bot@github.com
           message: 'Automatic application of license header'
+          push: false
           new_branch: ${{ env.BRANCH_NAME }}-${{ env.SHA }}
 
       - name: Create Pull Request
