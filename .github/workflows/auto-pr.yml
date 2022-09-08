@@ -30,7 +30,7 @@ jobs:
     env:
       BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
       SHA: ${{ github.sha }}
-      TIME: `date "+%H-%M-%S"`
+      TIME: $(date +%Y%m%d%H%M)
     steps:
       - name: Checkout Camel project
         uses: actions/checkout@v3
