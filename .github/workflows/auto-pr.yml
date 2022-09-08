@@ -29,11 +29,15 @@ jobs:
   build:
     name: Sync Camel Spring Boot Main Branch
     runs-on: ubuntu-latest
+
+    env:
+      BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+
     steps:
       - name: Checkout Camel project
         uses: actions/checkout@v3
       - name: Branch name
-        run: echo running on branch ${GITHUB_REF##*/}
+        run: echo running on branch ${{ env.BRANCH_NAME }}
 
       - name: Add Test file
         run: rm -f index.html
@@ -46,12 +50,12 @@ jobs:
           author_name: License Bot
           author_email: license_bot@github.com
           message: 'Automatic application of license header'
-          new_branch: ${GITHUB_REF##*/}-test
+          new_branch: ${{ env.BRANCH_NAME }}-test
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4.1.1
         with:
-          base: ${GITHUB_REF##*/}-test
+          base: ${{ env.BRANCH_NAME }}-test
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: automatic-periodic-sync
           title: '[Github Actions] Periodic Sync Camel Spring Boot Main Branch'
