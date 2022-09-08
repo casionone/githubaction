@@ -35,7 +35,7 @@ jobs:
       - name: Checkout Camel project
         uses: actions/checkout@v3
       - name: Branch name
-        run: echo running on branch ${{ env.BRANCH_NAME }}-${{ env.SHA }}; echo "MY_DATE=$(date +'%Y-%m-%dT-%H-%M-%S')" >> $GITHUB_ENV
+        run: echo running on branch ${{ env.BRANCH_NAME }}-${{ env.SHA }}; echo "MY_DATE=$(date +'%Y-%m-%dT-%H-%M-%S-%N')" >> $GITHUB_ENV
 
       - name: info
         run: ls ./
