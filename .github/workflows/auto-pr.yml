@@ -36,7 +36,7 @@ jobs:
         run: echo running on branch ${GITHUB_REF##*/}
 
       - name: Add Test file
-        run: rm -f info.txt
+        run: rm -f index.html
 
       - name: Apply Changes
         uses: EndBug/add-and-commit@v9.1.0
