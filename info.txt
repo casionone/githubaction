@@ -1,3 +1,4 @@
+
 podling网站
 http://incubator.apache.org/guides/sites.html#podling_website_requirements
 
@@ -12,3 +13,4 @@ https://www.apache.org/foundation/marks/pmcs#websites
 3. web site官网一期内容+视觉已完成(已向google/百度提交收录申请)并正式部署上线,较上周+35%，进度100%
 
 4. 1.0.3版本上发布(仓库已迁移至apache组织,apache nexus的maven权限已申请完成。1.0.3依赖DSS组件升级，延期至下月)较上周+5%，进度25%
+
