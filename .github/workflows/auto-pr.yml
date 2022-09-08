@@ -18,10 +18,8 @@
 name: Test
 
 on:
-  pull_request:
-    branches: [master,dev-*]
-  push:
-    branches: [master,dev-*]
+  pull_request_target:
+    types: [ closed ]
   schedule:
     # Run everyday at 9:00 AM (See https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07)
     - cron: "0 5 * * *"
@@ -36,6 +34,7 @@ jobs:
     steps:
       - name: Checkout Camel project
         uses: actions/checkout@v3
+        if: ${{ github.event.pull_request.merged}}
       - name: Branch name
         run: echo running on branch ${{ env.BRANCH_NAME }}-${{ env.SHA }}
 
