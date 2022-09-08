@@ -61,7 +61,7 @@ jobs:
         uses: peter-evans/create-pull-request@v4.1.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master-2022-09-08T-17-20-07
+          branch: master-2022-09-08T-17-29-31
           base: ${{ env.BRANCH_NAME }}
           title: '[Example] Update report'
           body: |
