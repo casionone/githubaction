@@ -18,8 +18,10 @@
 name: Publish Snapshot2
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
+  pull_request:
+    branches: [master,dev-*]
+  push:
+    branches: [master,dev-*]
 
 jobs:
   publish-snapshot:

@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-name: Publish Snapshot
+name: Publish Snapshot1
 
 on:
   pull_request:
