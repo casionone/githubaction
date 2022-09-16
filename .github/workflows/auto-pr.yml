@@ -19,12 +19,12 @@ name: Test
 
 on:
   push:
-    branches: [master]
+    branches: [dev-*]
   schedule:
     # Run everyday at 9:00 AM (See https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07)
     - cron: "0 5 * * *"
 jobs:
-  build:
+  auto-code-format:
     runs-on: ubuntu-latest
 
     env:
@@ -32,13 +32,14 @@ jobs:
       SHA: ${{ github.sha }}
 
     steps:
-      - name: Checkout Camel project
-        uses: actions/checkout@v3
-      - name: Branch name
-        run: echo running on branch ${{ env.BRANCH_NAME }}-${{ env.SHA }}; echo "MY_DATE=$(date +'%Y-%m-%dT-%H-%M-%S-%N')" >> $GITHUB_ENV
+      - name: pull request
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
 
-      - name: info
-        run: ls ./
+      - name: Checkout
+        uses: actions/checkout@v3
+
+#      - name: Branch name
+#        run: echo running on branch ${{ env.BRANCH_NAME }}-${{ env.SHA }}
 
       - name: Add Test file
         run: echo ${{ env.MY_DATE }}-${{ env.BRANCH_NAME }}-${{ env.SHA }} > info.txt
@@ -64,7 +65,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: master-2022-09-08T-17-27-53
           base: ${{ env.BRANCH_NAME }}
-
           commit-message: Update report
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
