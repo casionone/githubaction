@@ -9,9 +9,9 @@ More details can be found [here](https://community.apache.org/apache-way/apache-
 
 Mentors and community members are encouraged to contribute to this page and comment on it, the following tables summarize our self-assessment against the **Apache Project Maturity Model**.
 
-:white_check_mark: means that the related item is in good status.
-:white_large_square: means that the related item need long-term attention.
-:x: means that the related item need to be fixed ASAP.
+- :white_check_mark: means that the related item is in good status.
+- :white_large_square: means that the related item need long-term attention.
+- :x: means that the related item need to be fixed ASAP.
 
 
 ## Maturity model assessment
@@ -22,7 +22,7 @@ Mentors and community members are encouraged to contribute to this page and comm
 | -------- | ----- | ---------- |
 | **CD10** | The project produces Open Source software for distribution to the public, at no charge.                                                                                                                                                                         | :white_check_mark:  The project source code is licensed under the `Apache License 2.0`. |
 | **CD20** | Anyone can easily discover and access the project's code.                                                                                                                                                                                                    | :white_check_mark:  The [offical website](https://linkis.incubator.apache.org/) includes `Github` link which can access GitHub directly. |
-| **CD30** | Anyone using standard, widely-available tools, can build the code in a reproducible way.                                                                                                                                                                       | :white_check_mark:   Apache Linkis provide how-to-build document to tell user how to compile on bare metal. |
+| **CD30** | Anyone using standard, widely-available tools, can build the code in a reproducible way.                                                                                                                                                                       | :white_check_mark:   Apache Linkis provide [how-to-build](https://linkis.apache.org/docs/latest/development/linkis-compile-and-package) document to tell user how to compile on bare metal. |
 | **CD40** | The full history of the project's code is available via a source code control system, in a way that allows anyone to recreate any released version.                                                                                                            | :white_check_mark:  It depends on git, and anyone can view the full history of the project via commit logs. |
 | **CD50** | The source code control system establishes the provenance of each line of code in a reliable way, based on strong authentication of the committer. When third parties contribute code, commit messages provide reliable information about the code provenance. | :white_check_mark:  The project uses GitHub and managed by Apache Infra, it ensuring provenance of each line of code to a committer. |
 
@@ -41,7 +41,7 @@ Mentors and community members are encouraged to contribute to this page and comm
 | **ID**   | **Description**                                                                                                                                                                                                                                                                 | **Status** |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | **RE10** | Releases consist of source code, distributed using standard and open archive formats that are expected to stay readable in the long term.                                                                                                                                       | :white_check_mark:  Source release is distributed via [dist.apache.org](https://dist.apache.org/repos/dist/release/incubator/linkis) and linked from [download page](https://linkis.incubator.apache.org/download/main). |
-| **RE20** | The project's PMC (Project Management Committee, see CS10) approves each software release in order to make the release an act of the Foundation.                                                                                                                                                                          | :white_check_mark:  All releases have been voted at dev@linkis and general@incubator, and have at least 3 PPMC's votes. |
+| **RE20** | The project's PMC (Project Management Committee, see CS10) approves each software release in order to make the release an act of the Foundation.                                                                                                                                                                          | :white_check_mark:  All releases have been voted at dev@linkis and general@incubator, and have at least 3 PPMC's/IPMC's votes. |
 | **RE30** | Releases are signed and/or distributed along with digests that anyone can reliably use to validate the downloaded archives.                                                                                                                                                       | :white_check_mark:  All releases are signed, and the [KEYS](https://downloads.apache.org/incubator/linkis/KEYS) is available. |
 | **RE40** | The project can distribute convenience binaries alongside source code, but they are not Apache Releases, they are provided with no guarantee. | :white_check_mark:  User can easily build binaries from source code.  Convenience binaries are distributed alongside source code at the same time via <ul><li>[Maven Central Repository](https://mvnrepository.com/artifact/org.apache.linkis)</li><li>[dist.apache.org](https://dist.apache.org/repos/dist/release/incubator/linkis/)</li></ul>  |
 | **RE50** | The project documents a repeatable release process so that someone new to the project can independently generate the complete set of artifacts required for a release. | :white_check_mark:  We can follow the [release guide](http://linkis.incubator.apache.org/community/release-process.html) to make new Apache Linkis release. And so far we had 7 different release managers. |
@@ -53,7 +53,7 @@ Mentors and community members are encouraged to contribute to this page and comm
 | **QU10** | The project is open and honest about the quality of its code. Various levels of quality and maturity for various modules are natural and acceptable as long as they are clearly communicated. | :white_check_mark:  We encourage user to [report issues](https://github.com/apache/incubator-linkis/issues) |
 | **QU20** | The project puts a very high priority on producing secure software.                                                                                                                                                                                                            | :white_check_mark:  All safety issues will be resolved in priority. |
 | **QU30** | The project provides a well-documented, secure and private channel to report security issues, along with a documented way of responding to them. | :white_check_mark:  Website provides a [security page](http://linkis.incubator.apache.org/community/security) |
-| **QU40** | The project puts a high priority on backwards compatibility and aims to document any incompatible changes and provide tools and documentation to help users transition to new features. | :white_check_mark:  All releases are backwards compatibility. |
+| **QU40** | The project puts a high priority on backwards compatibility and aims to document any incompatible changes and provide tools and documentation to help users transition to new features. | :white_check_mark:  All releases are backwards compatibility. Apache Linkis provides [upgrade guide](https://linkis.apache.org/docs/latest/upgrade/upgrade-guide) docs  |
 | **QU50** | The project strives to respond to documented bug reports in a timely manner. | :white_check_mark:  The project has resolved 1200+ issues and 1700+ pull requests so far, with very prompt response. |
 
 **Community**
@@ -85,10 +85,11 @@ Mentors and community members are encouraged to contribute to this page and comm
 | **IN10** | The project is independent from any corporate or organizational influence. | :white_check_mark:  The PPMC members and committer of Apache Linkis are from 10+ companies, and majority of them are NOT From the company that donated this project. |
 | **IN20** | Contributors act as themselves, not as representatives of a corporation or organization. | :white_check_mark:  The contributors act on their own initiative without representing a corporation or organization. |
 
+----------------
 
 # 中文
 
-# Apache Linkis 的成熟度评估（孵化中）
+# Apache Linkis 的成熟度自我评估（孵化中）
 
 这个成熟度模型的目标是描述 Apache 项目如何以简洁和高级的方式运行，并提供一个项目可以选择用来评估自己的基本框架。
 
@@ -96,11 +97,11 @@ Mentors and community members are encouraged to contribute to this page and comm
 
 ## 本次评估的状态
 
-该评估仍在进行中。
+鼓励导师和社区成员对此页面做出贡献并发表评论，下表总结了我们对 **Apache 项目成熟度模型**的自我评估。
 
-## 成熟度模型评估
-
-下表根据【Apache成熟度模型】（https://community.apache.org/apache-way/apache-project-maturity-model.html）填写。欢迎导师和社区成员发表评论和修改。
+- :white_check_mark: 表示相关项目状态良好。
+- :white_large_square: 表示相关项目需要长期关注。
+- :x: 表示相关项目需要尽快修复。
 
 **代码**
 
@@ -117,8 +118,8 @@ Mentors and community members are encouraged to contribute to this page and comm
 |  **ID** | **描述** | **状态** |
 | -------- | ----- | ---------- |
 | **LC10** | Apache 许可证 2.0 版涵盖了已发布的代码。 | :white_check_mark:  [许可](https://github.com/apache/incubator-linkis/blob/master/LICENSE) 位于 GitHub 存储库中。并且所有源文件都带有 APLv2 头文件，请通过 `apache-rat:check` 检查。 |
-| **LC20** |作为项目代码的强制依赖项的库不会产生比 Apache 许可更严格的限制。 | :white_check_mark:   |
-| **LC30** | LC20 中提到的库可作为开源软件使用。 | :white_check_mark:    |
+| **LC20** | 作为项目代码的强制依赖项的库不会产生比 Apache 许可证更多的限制。 | :white_check_mark: 所有 [依赖项](https://github.com/apache/incubator-linkis/blob/master/linkis-dist/release-docs/LICENSE) 都已检查，并且没有一个比 Apache 许可证产生更多限制 做。 |
+| **LC30** | LC20 中提到的库可作为开源软件使用。 | :white_check_mark: 请参阅 [依赖项](https://github.com/apache/incubator-linkis/blob/master/linkis-dist/release-docs/LICENSE)。 |
 | **LC40** |提交者受个人贡献者协议（“Apache iCLA”）的约束，该协议定义了他们可以提交的代码以及他们需要如何识别不合法的代码继承人。 | :white_check_mark:  所有提交者都有 iCLA。 |
 | **LC50** |该项目清楚地定义并记录了项目产生的所有内容的版权所有权。 | :white_check_mark:  所有源文件都带有 APLv2 标头，请通过 `apache-rat:check` 检查。 |
 
@@ -153,7 +154,7 @@ Mentors and community members are encouraged to contribute to this page and comm
 | **CO30** |贡献包括源代码、文档、建设性的错误报告、建设性的讨论、营销以及通常为项目增加价值的任何东西。 | :white_check_mark: 欢迎所有好的贡献，包括代码和非代码。 |
 | **CO40** |社区努力做到任人唯贤，并为随着时间的推移为项目增加价值的贡献者赋予更多的权利和责任。 | :white_check_mark:  到目前为止，社区已经选出了 12 名新的提交者。 |
 | **CO50** |该项目记录了贡献者如何获得更多权利，例如提交访问权或决策权，并始终如一地应用这些原则。 | :white_check_mark:  附上文档 [committer guide](https://linkis.apache.org/community/how-to-contribute)。 |
-| **CO60** |社区的运作基于拥有决策权的成员（参见 CS10）的共识。 Apache 项目不欢迎独裁者，无论仁慈与否。 | :white_check_mark:  |
+| **CO60** |社区的运作基于拥有决策权的成员（参见 CS10）的共识。 Apache 项目不欢迎独裁者，无论仁慈与否。 | :white_check_mark: 所有决定都是在社区成员投票后做出的。 |
 | **CO70** |该项目力求及时回答用户的问题。 | :white_check_mark:  我们使用 dev@linkis, [Github issue](https://github.com/apache/incubator-linkis/issues) 和 [Github Discussion](https://github.com/apache/incubator-linkis/discussions) 及时完成此操作。 |
 
 **共识**
@@ -161,10 +162,10 @@ Mentors and community members are encouraged to contribute to this page and comm
 |  **ID** | **描述** | **状态** |
 | -------- | ----- | ---------- |
 | **CS10** |该项目维护其具有决策权的贡献者的公开列表。项目的 PMC（项目管理委员会）由这些贡献者组成。 | :white_check_mark:  请参阅所有 PPMC 成员和提交者的 [members](https://linkis.apache.org/team)。 |
-| **CS20** |决策需要 PMC 成员之间达成共识，并记录在项目的主要沟通渠道上。 PMC 会考虑社区意见，但 PMC 拥有最终决定权。 | :white_check_mark:  |
+| **CS20** |决策需要 PMC 成员之间达成共识，并记录在项目的主要沟通渠道上。 PMC 会考虑社区意见，但 PMC 拥有最终决定权。 | :white_check_mark: 所有决定都是通过 dev@linkis 投票做出的，并且至少有 3 个 PPMC/IPMC 的 +1 绑定。 |
 | **CS30** |当讨论不足时，该项目使用记录在案的投票规则来建立共识。 | :white_check_mark:  该项目使用标准的 ASF 投票规则。 |
 | **CS40** |在 Apache 项目中，否决仅对代码提交有效。根据 CS30 中定义的 Apache 投票规则，行使否决权的人必须通过技术解释来证明其合理性。 | :white_check_mark:  除了代码提交之外，Apache Linkis 社区尚未使用否决权。 |
-| **CS50** |所有“重要”的讨论都是在项目的主要沟通渠道上以书面形式异步进行的。影响项目的线下、面对面或私人讨论也记录在该频道上。 |  所有重要的讨论和结论都以书面形式记录下来。 |
+| **CS50** |所有“重要”的讨论都是在项目的主要沟通渠道上以书面形式异步进行的。影响项目的线下、面对面或私人讨论也记录在该频道上。 | :white_check_mark:  所有重要的讨论和结论都以书面形式记录下来。 |
 
 **独立**
 
